@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo|Fjalla+One");
+.se-container {
+  overflow: hidden; }
+  .se-container .slope {
+    color: #fff;
+    margin: 0 -50px;
+    margin-top: -200px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center; }
+    .se-container .slope .slope-content p {
+      font-family: 'Arvo', serif;
+      font-weight: 200;
+      text-indent: 5rem;
+      line-height: 1.6rem;
+      width: 50%;
+      max-width: 800px;
+      margin: auto;
+      padding: 15px;
+      color: #cecccc; }
+  .se-container .slope:nth-child(odd) {
+    background-color: #1f1f1f;
+    color: #451a1a;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+    margin-top: 0; }
+    .se-container .slope:nth-child(odd) .slope-content {
+      padding: 130px 100px 250px 100px;
+      -webkit-transform: rotate(6deg);
+      -moz-transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+      -o-transform: rotate(6deg);
+      transform: rotate(6deg); }
+  .se-container .slope:nth-child(even) {
+    background-color: #451a1a;
+    color: #1f1f1f;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    transform: rotate(4deg); }
+    .se-container .slope:nth-child(even) .slope-content {
+      padding: 130px 100px 250px 100px;
+      -webkit-transform: rotate(-4deg);
+      -moz-transform: rotate(-4deg);
+      -ms-transform: rotate(-4deg);
+      -o-transform: rotate(-4deg);
+      transform: rotate(-4deg); }
+
+/*# sourceMappingURL=_base.css.map */

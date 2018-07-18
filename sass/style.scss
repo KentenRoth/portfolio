@@ -1,0 +1,288 @@
+@import "base.scss";
+@import "design.scss";
+@import url('https://fonts.googleapis.com/css?family=Arvo|Fjalla+One');
+
+
+
+body {
+    background-color: $main-color;
+    margin: 0px;
+    padding: 0px;
+    @include text-font;
+}
+
+.pageContent {
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    background: -webkit-linear-gradient(left, $font-color1, $font-color2, $font-color1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% auto;
+    animation: font 18s linear infinite;
+    @keyframes font {
+        to {
+            background-position: 400% center;
+        }
+    }
+    font-size: 2.5rem;
+    @include header-font;
+    margin: auto;
+    text-align: center;
+}
+
+.project-h1 {
+    background: -webkit-linear-gradient(left, $border-color1, $border-color2, $border-color1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% auto;
+    animation: font 18s linear infinite;
+    @keyframes font {
+        to {
+            background-position: 400% center;
+        }
+    }
+    font-size: 2.5rem;
+    @include header-font;
+    margin: auto;
+    text-align: center;
+}
+
+.text-design {
+    font-size: 1.1rem;
+    font-weight: 1000;
+    @include font-design-light;
+}
+
+.text-design2 {
+    font-size: 1.1rem;
+    font-weight: 1000;
+    @include font-design-dark;
+}
+
+.image-location {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: -260px;
+}
+
+
+.profile-picture {
+    background-image: url("../images/profilepic.jpg");
+    border-radius: 4px;
+    box-shadow: 0 12px 16px 0 rgba($border-color1, 0.8), 0 17px 50px 0 rgba($border-color2, 0.72);
+    height: 233px;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    width: 215px;
+}
+
+.about-me-button {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    height: 35px;
+    background: $sec-color;
+    border-radius: 6px;
+    border: 2px solid $font-color1;
+    @include text-font;
+    font-size: 1.4rem;
+    color: $font-color;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.about-me-button:hover {
+    box-shadow: 0 12px 16px 0 rgba($font-color1, 0.8), 0 17px 50px 0 rgba($font-color2, 0.72);
+    cursor: pointer;
+}
+
+.project {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+// below needs refactored
+
+.project-image {
+    background-image: url("../images/temp.png");
+    margin: auto;
+    height: 150px;
+    width: 141px;
+    border-radius: 2px;
+    box-shadow: 0 12px 16px 0 rgba($border-color1, 0.8), 0 17px 50px 0 rgba($border-color2, 0.72);;
+    
+}
+
+.project-button {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 35px;
+    background: $main-color;
+    border-radius: 6px;
+    border: 2px solid $border-color1;
+    @include text-font;
+    font-size: 1.4rem;
+    color: $font-color;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.project-button:hover {
+    box-shadow: 0 12px 16px 0 rgba($border-color1, 0.8), 0 17px 50px 0 rgba($border-color2, 0.72);
+    cursor: pointer;
+}
+
+.flip {
+    display: flex;
+}
+
+input {
+    padding-left: 5px;
+    margin: auto;
+    margin-top: 25px;
+    display: block;
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid $font-color2;
+    background-color: $main-color;
+    color: $font-color;
+    font-size: 1.1rem;
+    @include text-font;
+    box-shadow: 0 3px 4px 0 rgba($font-color2, 0.8);
+}
+
+textarea {
+    padding-left: 5px;
+    margin: auto;
+    margin-top: 25px;
+    display: block;
+    width: 85%;
+    border-radius: 5px;
+    border: 2px solid $font-color2;
+    background-color: $main-color;
+    color: $font-color;
+    height: 155px;
+    @include text-font;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 4px 0 rgba($font-color2, 0.8);
+}
+
+.send-message-button {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: -100px;
+    height: 35px;
+    background: $sec-color;
+    border-radius: 6px;
+    border: 2px solid $font-color1;
+    @include text-font;
+    font-size: 1.4rem;
+    color: $font-color;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.send-message-button:hover {
+    box-shadow: 0 12px 16px 0 rgba($font-color1, 0.8), 0 17px 50px 0 rgba($font-color2, 0.72);
+    cursor: pointer;
+}
+
+footer {
+    border-top: 5px solid $border-color1;
+    padding-top: 25px;
+}
+
+.box {
+    width: 70px;
+    margin: auto;
+    justify-content: center;
+
+}
+.fa-twitter, .fa-linkedin-in, .fa-instagram {
+    font-size: 4.2rem;
+    text-align: center;
+    color: $font-color;
+}
+
+
+.page-info {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    @include text-font;
+    @include font-design-dark;
+    font-size: 1.1rem;
+    font-weight: 1000;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .slope-container .slope {
+        margin-bottom: -150px;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+        padding-left: 5px;
+    }
+    .project-image {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .project-button, .about-me-button {
+        width: 85%;
+        margin-bottom: 20px
+    }
+
+    .flip {
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    input {
+        width: 80%;
+    }
+    
+    textarea {
+        width: 80%;
+    }
+
+    .send-message-button {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .col-4 {
+        width: 33.3%;
+    }
+    
+    .page-info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+

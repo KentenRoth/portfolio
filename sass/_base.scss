@@ -1,0 +1,56 @@
+
+@import 'design.scss';
+@import "bourbon/bourbon";
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Fjalla+One');
+
+@mixin header-font{font-family: 'Fjalla One', sans-serif;}
+@mixin text-font{font-family: 'Arvo', serif}
+
+@mixin coloration-and-rotate($main-color, $bg-color, $angle: 6deg){
+    background-color: $bg-color;
+    color: $main-color;
+    @include transform(rotate($angle)); 
+    .content{
+        padding: 130px 100px 250px 100px;
+        @include transform(rotate(-$angle));
+    }
+}
+
+.slope-container {
+    overflow: hidden;
+    margin: auto;
+    .slope {
+        color: #fff;
+        margin: 0 -135px;
+        margin-top: -280px;
+        @include transform-origin(left center);
+        .content {
+            
+            p {
+                @include text-font;
+                font-weight: 200;
+                text-indent: 5rem;
+                line-height: 1.6rem;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 28px;
+                padding: 15px;
+                color: $font-color;
+            }
+        }
+    }
+    
+    .slope:nth-child(odd) {
+        //dark background
+        @include coloration-and-rotate($sec-color,$main-color, -6deg);
+        margin-top: 0;
+        border-top: 5px solid $border-color1;
+    }
+    .slope:nth-child(even) {
+        //light background
+        @include coloration-and-rotate($main-color, $sec-color, 4deg);
+        border-top: 5px solid $border-color2;
+    }
+
+}
