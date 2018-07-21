@@ -173,18 +173,12 @@ body {
   padding-right: 10px; }
 
 h1 {
-  background: -webkit-linear-gradient(left, #00ddff, #1cd832, #00ddff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400% auto;
-  animation: font 18s linear infinite;
   font-size: 2.5rem;
   font-family: 'Fjalla One', sans-serif;
   margin: auto;
-  text-align: center; }
-@keyframes font {
-  to {
-    background-position: 400% center; } }
+  text-align: center;
+  color: #00ddff; }
+
 h2 {
   color: #cecccc;
   font-size: 1rem;
@@ -193,42 +187,22 @@ h2 {
   text-align: center; }
 
 .project-h1 {
-  background: -webkit-linear-gradient(left, #d000ff, #009dff, #d000ff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400% auto;
-  animation: font 18s linear infinite;
   font-size: 2.5rem;
   font-family: 'Fjalla One', sans-serif;
   margin: auto;
-  text-align: center; }
-@keyframes font {
-  to {
-    background-position: 400% center; } }
+  text-align: center;
+  color: #d000ff; }
+
 .text-design {
   font-size: 1.1rem;
-  font-weight: 1000;
-  background: -webkit-linear-gradient(left, #00ddff, #1cd832, #00ddff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400% auto;
-  animation: font 18s linear infinite;
-  font-family: 'Arvo', serif; }
-@keyframes font {
-  to {
-    background-position: 400% center; } }
+  font-family: 'Arvo', serif;
+  color: #00ddff; }
+
 .text-design2 {
   font-size: 1.1rem;
-  font-weight: 1000;
-  background: -webkit-linear-gradient(left, #d000ff, #009dff, #d000ff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400% auto;
-  animation: font 18s linear infinite;
-  font-family: 'Arvo', serif; }
-@keyframes font {
-  to {
-    background-position: 400% center; } }
+  font-family: 'Arvo', serif;
+  color: #d000ff; }
+
 .image-location {
   align-items: center;
   display: flex;
@@ -307,12 +281,12 @@ h2 {
   width: 80%;
   height: 35px;
   border-radius: 5px;
-  border: 2px solid #1cd832;
+  border: 2px solid #00ddff;
   background-color: #1f1f1f;
   color: #cecccc;
   font-size: 1.1rem;
   font-family: 'Arvo', serif;
-  box-shadow: 0 3px 4px 0 rgba(28, 216, 50, 0.8); }
+  box-shadow: 0 3px 4px 0 rgba(0, 221, 255, 0.8); }
 
 textarea {
   padding-left: 5px;
@@ -321,13 +295,13 @@ textarea {
   display: block;
   width: 85%;
   border-radius: 5px;
-  border: 2px solid #1cd832;
+  border: 2px solid #00ddff;
   background-color: #1f1f1f;
   color: #cecccc;
   height: 155px;
   font-family: 'Arvo', serif;
   font-size: 1.1rem;
-  box-shadow: 0 3px 4px 0 rgba(28, 216, 50, 0.8); }
+  box-shadow: 0 3px 4px 0 rgba(0, 221, 255, 0.8); }
 
 .send-message-button {
   display: block;
@@ -368,17 +342,10 @@ footer {
   margin-top: 25px;
   margin-bottom: 25px;
   font-family: 'Arvo', serif;
-  background: -webkit-linear-gradient(left, #d000ff, #009dff, #d000ff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400% auto;
-  animation: font 18s linear infinite;
   font-family: 'Arvo', serif;
   font-size: 1.1rem;
-  font-weight: 1000; }
-@keyframes font {
-  to {
-    background-position: 400% center; } }
+  color: #d000ff; }
+
 @media only screen and (max-width: 768px) {
   .slope-container .slope {
     margin-bottom: -150px; }

@@ -25,20 +25,22 @@ body {
 }
 
 h1 {
-    background: -webkit-linear-gradient(left, $font-color1, $font-color2, $font-color1);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400% auto;
-    animation: font 18s linear infinite;
-    @keyframes font {
-        to {
-            background-position: 400% center;
-        }
-    }
+    // background: -webkit-linear-gradient(left, $font-color1, $font-color2, $font-color1);
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
+    // background-size: 400% auto;
+    // animation: font 18s linear infinite;
+    // @keyframes font {
+    //     to {
+    //         background-position: 400% center;
+    //     }
+    // }
     font-size: 2.5rem;
     @include header-font;
     margin: auto;
     text-align: center;
+    color: $font-color1;
 }
 
 h2 {
@@ -50,32 +52,36 @@ h2 {
 }
 
 .project-h1 {
-    background: -webkit-linear-gradient(left, $border-color1, $border-color2, $border-color1);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400% auto;
-    animation: font 18s linear infinite;
-    @keyframes font {
-        to {
-            background-position: 400% center;
-        }
-    }
+    // background: -webkit-linear-gradient(left, $border-color1, $border-color2, $border-color1);
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
+    // background-size: 400% auto;
+    // animation: font 18s linear infinite;
+    // @keyframes font {
+    //     to {
+    //         background-position: 400% center;
+    //     }
+    // }
     font-size: 2.5rem;
     @include header-font;
     margin: auto;
     text-align: center;
+    color: $border-color1;
 }
 
 .text-design {
     font-size: 1.1rem;
-    font-weight: 1000;
+    //font-weight: 1000;
     @include font-design-light;
+    color: $font-color1;
 }
 
 .text-design2 {
     font-size: 1.1rem;
-    font-weight: 1000;
+    //font-weight: 1000;
     @include font-design-dark;
+    color: $border-color1;
 }
 
 .image-location {
@@ -168,12 +174,12 @@ h2 {
     width: 80%;
     height: 35px;
     border-radius: 5px;
-    border: 2px solid $font-color2;
+    border: 2px solid $font-color1;
     background-color: $main-color;
     color: $font-color;
     font-size: 1.1rem;
     @include text-font;
-    box-shadow: 0 3px 4px 0 rgba($font-color2, 0.8);
+    box-shadow: 0 3px 4px 0 rgba($font-color1, 0.8);
 }
 
 textarea {
@@ -183,13 +189,13 @@ textarea {
     display: block;
     width: 85%;
     border-radius: 5px;
-    border: 2px solid $font-color2;
+    border: 2px solid $font-color1;
     background-color: $main-color;
     color: $font-color;
     height: 155px;
     @include text-font;
     font-size: 1.1rem;
-    box-shadow: 0 3px 4px 0 rgba($font-color2, 0.8);
+    box-shadow: 0 3px 4px 0 rgba($font-color1, 0.8);
 }
 
 .send-message-button {
@@ -239,7 +245,8 @@ footer {
     @include text-font;
     @include font-design-dark;
     font-size: 1.1rem;
-    font-weight: 1000;
+    //font-weight: 1000;
+    color: $border-color1;
 }
 
 

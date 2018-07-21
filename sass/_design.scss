@@ -37,29 +37,33 @@ $sec-color: #484848;
     content: "";}
 
 @mixin font-design-light {
-    background: -webkit-linear-gradient(left, $font-color1, $font-color2, $font-color1);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400% auto;
-    animation: font 18s linear infinite;
-    @keyframes font {
-        to {
-            background-position: 400% center;
-        }
-    }
+    // background: -webkit-linear-gradient(left, $font-color1, $font-color2, $font-color1);
+    // background-clip: text;
+    // color: transparent;
+    // -webkit-background-clip: text;
+    // background-size: 400% auto;
+    // animation: font 18s linear infinite;
+    // @keyframes font {
+    //     to {
+    //         background-position: 400% center;
+    //     }
+    // }
     @include text-font;
 }
 
 @mixin font-design-dark {
-    background: -webkit-linear-gradient(left, $border-color1, $border-color2, $border-color1);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400% auto;
-    animation: font 18s linear infinite;
-    @keyframes font {
-        to {
-            background-position: 400% center;
-        }
-    }
+    // background: linear-gradient(left, $border-color1, $border-color2, $border-color1);
+    // background-clip: text;
+    // color: transparent;
+    // -webkit-background-clip: text;
+    // -webkit-text-stroke-width: 0px;
+    // background-size: 400% auto;
+    // animation: font 18s linear infinite;
+    // @keyframes font {
+    //     to {
+    //         background-position: 400% center;
+    //     }
+    // }
     @include text-font;
 }
+
