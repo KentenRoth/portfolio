@@ -85,6 +85,7 @@
                 <div class="content">
                     <div class="projects-header">
                         <h1 class="project-h1">Projects</h1>
+                        <h2>Projects in progress!</h2>
                     </div>
                     <div class="container">
                         <div class="project">
@@ -168,21 +169,21 @@
                         <div class="contact-me">
                             <div class="row">
                                 <div class="col-6">
-                                    <form>
-                                        <input type="text" placeholder="Name">
-                                        <input type="text" placeholder="Subject">
-                                        <input type="email" placeholder="Email Address">
+                                    <form action="mailto:kentenroth@gmail.com" method="post" enctype="text/plain">
+                                        <input class="input-box" type="text" placeholder="Name" name="Name">
+                                        <input class="input-box" type="text" placeholder="Subject" name="Subject">
+                                        <input class="input-box" type="email" placeholder="Email Address" name="Email Address">
 
                                     
                                 </div>
                                 <div class="col-6">
-                                    <textarea placeholder="Enter a message"></textarea>
+                                    <textarea placeholder="Enter a message" name="Message"></textarea>
 
                                     
                                 </div>
                             </div>
                             <div>
-                                <button class="send-message-button">Send Message</button>
+                                <input type="submit" value="Send Message" class="send-message-button">
                             </div>
                         </div>
                     </div>
