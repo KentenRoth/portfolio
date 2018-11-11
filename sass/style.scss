@@ -25,17 +25,7 @@ body {
 }
 
 h1 {
-    // background: -webkit-linear-gradient(left, $font-color1, $font-color2, $font-color1);
-    // background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    // -webkit-background-clip: text;
-    // background-size: 400% auto;
-    // animation: font 18s linear infinite;
-    // @keyframes font {
-    //     to {
-    //         background-position: 400% center;
-    //     }
-    // }
+
     font-size: 2.5rem;
     @include header-font;
     margin: auto;
@@ -52,17 +42,7 @@ h2 {
 }
 
 .project-h1 {
-    // background: -webkit-linear-gradient(left, $border-color1, $border-color2, $border-color1);
-    // background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    // -webkit-background-clip: text;
-    // background-size: 400% auto;
-    // animation: font 18s linear infinite;
-    // @keyframes font {
-    //     to {
-    //         background-position: 400% center;
-    //     }
-    // }
+
     font-size: 2.5rem;
     @include header-font;
     margin: auto;
@@ -72,14 +52,12 @@ h2 {
 
 .text-design {
     font-size: 1.1rem;
-    //font-weight: 1000;
     @include font-design-light;
     color: $font-color1;
 }
 
 .text-design2 {
     font-size: 1.1rem;
-    //font-weight: 1000;
     @include font-design-dark;
     color: $border-color1;
 }
@@ -96,7 +74,6 @@ h2 {
 .profile-picture {
     background-image: url("../images/profilepic.jpg");
     border-radius: 4px;
-    box-shadow: 0 12px 16px 0 rgba($border-color1, 0.8), 0 17px 50px 0 rgba($border-color2, 0.72);
     height: 233px;
     margin: auto;
     margin-top: 10px;
@@ -120,7 +97,8 @@ h2 {
     transition-duration: 0.4s;
 }
 .about-me-button:hover {
-    box-shadow: 0 12px 16px 0 rgba($font-color1, 0.8), 0 17px 50px 0 rgba($font-color2, 0.72);
+    background-color: $font-color1;
+    color: $main-color;
     cursor: pointer;
 }
 
@@ -132,7 +110,6 @@ h2 {
 .project-image {
     background-image: url("../images/temp.png");
     border-radius: 2px;
-    box-shadow: 0 12px 16px 0 rgba($border-color1, 0.8), 0 17px 50px 0 rgba($border-color2, 0.72);
     height: 150px;
     margin: auto;
     width: 141px;
@@ -141,7 +118,22 @@ h2 {
 .garden-app {
     background-image: url("../images/garden-app.png");
     border-radius: 2px;
-    box-shadow: 0 12px 16px 0 rgba($border-color1, 0.8), 0 17px 50px 0 rgba($border-color2, 0.72);
+    height: 150px;
+    margin: auto;
+    width: 141px;
+}
+
+.challenge-app {
+    background-image: url("/images/challenge-site.png");
+    border-radius: 2px;
+    height: 150px;
+    margin: auto;
+    width: 141px;
+}
+
+.book-app {
+    background-image: url("/images/book-app.png");
+    border-radius: 2px;
     height: 150px;
     margin: auto;
     width: 141px;
@@ -164,8 +156,9 @@ h2 {
     transition-duration: 0.4s;
 }
 .project-button:hover {
-    box-shadow: 0 12px 16px 0 rgba($border-color1, 0.8), 0 17px 50px 0 rgba($border-color2, 0.72);
     cursor: pointer;
+    background-color: $border-color1;
+    color: $main-color;
 }
 
 .flip {
@@ -185,7 +178,6 @@ h2 {
     color: $font-color;
     font-size: 1.1rem;
     @include text-font;
-    box-shadow: 0 3px 4px 0 rgba($font-color1, 0.8);
 }
 
 textarea {
@@ -201,7 +193,6 @@ textarea {
     height: 155px;
     @include text-font;
     font-size: 1.1rem;
-    box-shadow: 0 3px 4px 0 rgba($font-color1, 0.8);
 }
 
 .send-message-button {
@@ -222,7 +213,8 @@ textarea {
 }
 
 .send-message-button:hover {
-    box-shadow: 0 12px 16px 0 rgba($font-color1, 0.8), 0 17px 50px 0 rgba($font-color2, 0.72);
+    background-color: $font-color1;
+    color: $main-color;
     cursor: pointer;
 }
 

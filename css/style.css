@@ -213,7 +213,6 @@ h2 {
 .profile-picture {
   background-image: url("../images/profilepic.jpg");
   border-radius: 4px;
-  box-shadow: 0 12px 16px 0 rgba(208, 0, 255, 0.8), 0 17px 50px 0 rgba(0, 157, 255, 0.72);
   height: 233px;
   margin: auto;
   margin-top: 10px;
@@ -236,7 +235,8 @@ h2 {
   transition-duration: 0.4s; }
 
 .about-me-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 221, 255, 0.8), 0 17px 50px 0 rgba(28, 216, 50, 0.72);
+  background-color: #00ddff;
+  color: #1f1f1f;
   cursor: pointer; }
 
 .project {
@@ -246,7 +246,6 @@ h2 {
 .project-image {
   background-image: url("../images/temp.png");
   border-radius: 2px;
-  box-shadow: 0 12px 16px 0 rgba(208, 0, 255, 0.8), 0 17px 50px 0 rgba(0, 157, 255, 0.72);
   height: 150px;
   margin: auto;
   width: 141px; }
@@ -254,7 +253,20 @@ h2 {
 .garden-app {
   background-image: url("../images/garden-app.png");
   border-radius: 2px;
-  box-shadow: 0 12px 16px 0 rgba(208, 0, 255, 0.8), 0 17px 50px 0 rgba(0, 157, 255, 0.72);
+  height: 150px;
+  margin: auto;
+  width: 141px; }
+
+.challenge-app {
+  background-image: url("/images/challenge-site.png");
+  border-radius: 2px;
+  height: 150px;
+  margin: auto;
+  width: 141px; }
+
+.book-app {
+  background-image: url("/images/book-app.png");
+  border-radius: 2px;
   height: 150px;
   margin: auto;
   width: 141px; }
@@ -275,8 +287,9 @@ h2 {
   transition-duration: 0.4s; }
 
 .project-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(208, 0, 255, 0.8), 0 17px 50px 0 rgba(0, 157, 255, 0.72);
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #d000ff;
+  color: #1f1f1f; }
 
 .flip {
   display: flex; }
@@ -293,8 +306,7 @@ h2 {
   background-color: #1f1f1f;
   color: #cecccc;
   font-size: 1.1rem;
-  font-family: 'Arvo', serif;
-  box-shadow: 0 3px 4px 0 rgba(0, 221, 255, 0.8); }
+  font-family: 'Arvo', serif; }
 
 textarea {
   padding-left: 5px;
@@ -308,8 +320,7 @@ textarea {
   color: #cecccc;
   height: 155px;
   font-family: 'Arvo', serif;
-  font-size: 1.1rem;
-  box-shadow: 0 3px 4px 0 rgba(0, 221, 255, 0.8); }
+  font-size: 1.1rem; }
 
 .send-message-button {
   display: block;
@@ -328,7 +339,8 @@ textarea {
   transition-duration: 0.4s; }
 
 .send-message-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 221, 255, 0.8), 0 17px 50px 0 rgba(28, 216, 50, 0.72);
+  background-color: #00ddff;
+  color: #1f1f1f;
   cursor: pointer; }
 
 footer {
