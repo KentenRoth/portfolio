@@ -258,14 +258,14 @@ h2 {
   width: 141px; }
 
 .challenge-app {
-  background-image: url("/images/challenge-site.png");
+  background-image: url("../images/challenge-site.png");
   border-radius: 2px;
   height: 150px;
   margin: auto;
   width: 141px; }
 
 .book-app {
-  background-image: url("/images/book-app.png");
+  background-image: url("../images/book-app.png");
   border-radius: 2px;
   height: 150px;
   margin: auto;
